@@ -1,7 +1,8 @@
+<% if user_signed_in? %>
+<h1> Your'e logged in!</h1>
+<% else %>
+
 <div class="hero-unit">
-
-
-
 
 <h1>Welcome to One Month Rails!</h1>
 <p>
@@ -16,13 +17,15 @@ You've found the home pge for the
 
 <p>
 
-	<%= link_to "Sign Up Now!", "#", class: "btn-primary btn-large" %>
+	<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn-primary btn-large" %>
 
 
 
 </p>
 
 </div>
+
+<% end %> 
 
 
  
